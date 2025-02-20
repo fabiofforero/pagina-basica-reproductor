@@ -9,6 +9,22 @@ header {
     background: #333;
     color: white;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-btn:hover {
+    background: #777;
 }
 
 main {
@@ -25,8 +41,16 @@ footer {
     background: #f4f4f4;
     padding: 20px;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-audio {
+.nombre {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.reproductor {
     margin-top: 10px;
 }
