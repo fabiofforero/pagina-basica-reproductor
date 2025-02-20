@@ -1,12 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background: #333;
+    background: #222;
     color: white;
     padding: 20px;
     display: flex;
@@ -14,43 +20,96 @@ header {
     align-items: center;
 }
 
+h1 {
+    font-size: 24px;
+    flex: 1;
+    text-align: center;
+}
+
 .nav-btn {
-    background: #555;
+    background: #444;
     color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
 .nav-btn:hover {
-    background: #777;
+    background: #666;
 }
 
 main {
-    margin: 80px;
+    margin: 40px auto;
+    max-width: 800px;
 }
 
 img {
-    width: 300px;
+    width: 80%;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 footer {
-    background: #f4f4f4;
-    padding: 20px;
-    margin-top: 20px;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    margin-top: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.reproductor {
+    margin-left: 20px;
 }
 
 .nombre {
     font-size: 18px;
     font-weight: bold;
+    margin-left: auto;
+    padding-right: 20px;
 }
 
-.reproductor {
-    margin-top: 10px;
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .nav-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .nombre {
+        margin-left: 0;
+        padding-right: 0;
+    }
 }
