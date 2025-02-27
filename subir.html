@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT09 - Reproductor MP3</title>
+    <link rel="stylesheet" href="subir.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="nav-btn">⬅️ Regresar</a>
+    </header>
+
+    <main>
+        <ul id="playlist"></ul>
+
+        <div class="player-container">
+            <h2>🎵 Reproductor MP3</h2>
+            
+            <label for="fileInput" class="upload-btn">📂 Subir MP3</label>
+            <input type="file" id="fileInput" accept="audio/mp3" multiple>
+
+            <audio id="audioPlayer" controls></audio>
+
+            <div class="controls">
+                <button id="prevBtn">⏮️</button>
+                <button id="playPauseBtn">▶️</button>
+                <button id="nextBtn">⏭️</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="subir.js"></script>
+</body>
+</html>
